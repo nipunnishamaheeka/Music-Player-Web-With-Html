@@ -63,7 +63,9 @@ body{
 }
 
 .container .sidebar .logo:hover a,
-.container .sidebar .logo:hover i{
+.container .sidebar .logo:hover i,
+.container .sidebar .menu ul li:hover a,
+.container .sidebar .menu ul li:hover i{
     color: #5773ff;
 }
 .container .sidebar .menu h5{
@@ -84,7 +86,41 @@ body{
     gap: 20px;
     cursor: pointer;
 }
-.container .sidebar .playing .top img{
-    width: 20px;
+.container .sidebar .menu ul li a{
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+ .container .sidebar .playing .top{
+    background-color: #32323d;
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 13px;
 
+
+}
+
+.container .sidebar .playing .top img{
+    width: 36px;
+    height: 36px;
+
+}
+.container .sidebar .playing .bottom{
+     background-color: #25252d;
+     border-radius: 0 0 6px 6px;
+     padding: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 6px;
+     font-size: 12px;
+}
+
+.container .sidebar .playing .bottom i,
+.container .sidebar .playing .bottom p{
+    color: #919191;
 }
