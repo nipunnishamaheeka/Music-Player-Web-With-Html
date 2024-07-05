@@ -368,3 +368,294 @@ body{
     color: #919191;
 
 }
+
+.container .right-section{
+    padding: 20px 36px 20px 0;
+}
+
+.container .right-section .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.container .right-section .profile .user{
+    display: flex;
+}
+
+.container .right-section .profile .user .left{
+    display: flex;
+    align-items: center;
+    background: #32323d;
+    padding: 6px;
+    border-radius: 6px 0 0 6px;
+}
+
+
+.container .right-section .profile .user .left img{
+    width: 30px;
+    height: 30px;
+}
+
+.container .right-section .profile .user .right{
+    background-color: #25252d;
+    border-radius: 0 6px 6px 0;
+    padding: 13px;
+    color: #fff;
+}
+
+.container .right-section .music-player{
+    color: #fff;
+    background-color: #202026;
+    border-radius: 6px;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .right-section .music-player .top-section{
+    padding: 20px;
+    height: 86%;
+}
+
+.container .right-section .music-player .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.container .right-section .music-player .song-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.container .right-section .music-player .song-info img{
+    width: 280px;
+    height: 220px;
+}
+
+.container .right-section .music-player .description h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.container .right-section .music-player .description h5{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.container .right-section .music-player .description p{
+    color: #919191;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container .right-section .music-player .song-info .progress{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+.container .right-section .music-player .song-info .progress p{
+    font-size: 11px;
+
+} 
+
+.container .right-section .music-player .song-info .progress .active-line{
+    position: relative;
+    width: 120px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 30px;
+}
+
+.container .right-section .music-player .song-info .progress .deactive-line{
+    width: 80px;
+    height: 2px;
+    background-color: #919191;
+    margin-right: 30px;
+}
+
+.container .right-section .music-player .song-info .progress .active-line::before{
+    content: "";
+    background-color: #25252d;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -6px;
+    left: 120px;
+    border-radius: 50%;
+}
+
+.container .right-section .music-player .player-actions{
+
+    background-color: #5773ff;
+    height: 26%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container .right-section .music-player .player-actions .buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 24px;
+}
+
+.container .right-section .music-player .player-actions .buttons i{
+    font-size: 20px;
+}
+
+.container .right-section .music-player .player-actions .buttons .play-button{
+    padding: 16px;
+    background-color: #fff;
+    color: #5773ff;
+    border-radius: 18px;
+
+}
+
+.container .right-section .music-player .player-actions .lyrics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+}
+
+.container main header .nav-links button,
+.container .sidebar .logo button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    border: 1px solid #464748;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 8px;
+    
+}
+
+@media screen and (max-width: 1400px) {
+
+    .container .sidebar .playing .bottom p{
+        font-size: 10px;
+    }
+    .container main header .search{
+        width: 50%;
+        
+    }
+    .container main .trending .left .info h2{
+        font-size: 36px;
+    }
+    .container main .trending img{
+        width: 200px;
+        height: 180px;
+    }
+    .container main  .playlist .genres{
+        width: 30%;
+    }
+    .container main .playlist .genres .items{
+        grid-template-columns: 1fr;
+    }
+    .container main .playlist .genres .items .item{
+            padding: 10px;
+    }
+    .container main .playlist .genres .items .item p{
+        font-size: 12px;
+
+    }
+    .container main .playlist .genres .items .item:nth-child(6),
+        .container main .playlist .music-list .items .item .info>p{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container main header .search{
+        width: 40%;
+    }
+
+    .container main .trending .left .info h2{
+        font-size: 24px;
+    }
+    
+    .container main .trending .left .info h5{
+            display: block;
+            font-size: 12px;
+            margin-left: 0;
+        }
+
+    .container main .trending .left .info .buttons button{
+                    padding: 10px 12px;
+                    font-size: 12px;
+                }
+    .container main .trending .left .info .buttons i{
+        font-size: 14px;
+    }
+    .container main .playlist .genres{
+            display: none;
+    }
+    .container main .playlist .music-list{
+        width: 100%;
+    }
+    .container .right-section  .music-player{
+        height: 88%;
+    }
+    .container .right-section .music-player .song-info img{
+        width: 220px;
+        height: 220px;
+    }
+    .container .right-section .music-player .song-info .description h3{
+        font-size: 22px;
+    }
+    .container .right-section .music-player .song-info .progress{
+        margin: 0;
+
+    }
+    .container .right-section .music-player .song-info .progress .active-line{
+        width: 80px;
+    }
+    .container .right-section .music-player .song-info .progress .deactive-line{
+        width: 40px;
+    }
+    .container .right-section .music-player .song-info .progress .active-line::before{
+        left: 80px;
+    }
+
+    .container .right-section .music-player .player-actions .buttons{
+        margin-top: 30px;
+    }
+    .container .right-section .music-player .player-actions .buttons .play-button {
+        padding: 10px;
+        border-radius: 16px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .container{
+        grid-template-columns: 3fr 2fr;
+    }
+    .container .sidebar{
+       position: absolute;
+       left: -100%;
+    }
+
+    
+}
