@@ -62,8 +62,7 @@ body{
 
 }
 
-.container .sidebar .logo:hover a,
-.container .sidebar .logo:hover > i,
+.container .sidebar .logo a:hover,
 .container .sidebar .menu ul li:hover a,
 .container .sidebar .menu ul li:hover i,
 .container main header .nav-links a:hover{
@@ -536,7 +535,7 @@ body{
 
 .container main header .nav-links button,
 .container .sidebar .logo button{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: #1d1d1d;
@@ -656,6 +655,77 @@ body{
        position: absolute;
        left: -100%;
     }
+    .container .sidebar .playing{
+        display: none;
+    }
+    .container main header .nav-links a{
+        font-size: 13px;
+    }
+    .container main header .search{
+        width: 38px;
+    }
+   .container main header .search input{
+    display: none;
+   }
+   .container main .trending img{
+    width: 120px;
+    height: 100px;
+    margin-top: 66px;
+   }
 
+   .container main .playlist {
+    margin-top: 40px;
+   }
+    .container .right-section .music-player{
+        height: 87%;
+    }
+    .container .right-section .music-player .song-info img{
+        width: 180px;
+        height: 180px;
+    }
+    .container .right-section .music-player .player-actions .buttons{
+        margin-top: 38px;
+
+    }
+    .container .right-section .music-player .player-actions .buttons i{
+        font-size: 18px;
+    }
+        .container main header .nav-links button,
+        .container .sidebar .logo button{
+            display: flex;
+        }
+}
+
+@media screen and (max-width: 768px) {
     
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .container main .trending,
+    .container main .playlist{
+        display: none;
+    }
+    .container main header .search{
+        width: 40%;
+    }
+    .container main header .search input {
+        display: block;
+    }
+    .container .right-section{
+        padding: 20px 36px;
+    }
+    .container .right-section .profile{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .container .right-section .music-player{
+        height: 100%;
+    }
+    .container .right-section .music-player .song-info img{
+            width: 300px;
+            height: 190px;
+    }
+    .container .right-section .music-player .buttons i{
+        font-size: 22px;
+    }
 }
