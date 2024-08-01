@@ -545,6 +545,9 @@ body{
     border-radius: 8px;
     
 }
+header .trending .info h2{
+    font-size: 12px;
+}
 
 @media screen and (max-width: 1400px) {
 
