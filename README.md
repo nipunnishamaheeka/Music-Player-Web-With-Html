@@ -1,7 +1,3 @@
-Here is a sample README file for a music player web application that describes the project's features and setup process. The README is based on the layout and design shown in the provided image.
-
----
-
 # AsmrProg Music Player
 
 AsmrProg is a modern and responsive music player web application built using HTML, CSS, and JavaScript. The application provides users with a seamless experience to explore, play, and manage their music collections with ease.
